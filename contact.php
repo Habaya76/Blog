@@ -1,7 +1,9 @@
 <?php
 require('header.php');
 ?>
-
+<?php
+require('code.php');
+?>
 <main>
     <section class="section_contact">
         <article class="article_contact">
@@ -16,7 +18,7 @@ require('header.php');
                 <p class="error"><?php echo $messageError; ?></p>
                 <input type="submit" value="Envoyer" class="button">
                 <p class="merci" style="display:<?php if ($isSuccess) echo 'block';
-                                          else echo 'none'; ?>">votre message à bien été envoyé.Merci de m'avoir contacter :)</p>
+                                                else echo 'none'; ?>">votre message à bien été envoyé.Merci de m'avoir contacter :)</p>
             </form>
         </article>
     </section>

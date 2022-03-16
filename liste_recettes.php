@@ -9,6 +9,7 @@ require_once('code.php');
     <section class="section_listerecettes">
         <?php
         while ($row = $resultats->fetch()) :
+           
         ?>
             <article class="article_listerecettes">
                 <div id="liste">
@@ -21,7 +22,7 @@ require_once('code.php');
                      Illum vero itaque fugit nam aliquid, incidunt voluptatem expedita nisi rerum eos quaerat?<?php
                     // echo $row['image'];
                     ?> </p>
-                <input type="submit" value="voir plus">
+               <button type="submit" action="voir" class="button"><a class="voir" href="recette.php?idarticle=<?php echo $row['idarticle'];?> ">Voir plus</a></button>
                 </div>
             </article>
 

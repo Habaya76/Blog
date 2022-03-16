@@ -116,7 +116,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 $db = new PDO('mysql:host=localhost;dbname=projet_recettes_cuisine', 'root', 'root');
 
-$resultats = $db->query('SELECT nom, image From article', PDO::FETCH_ASSOC);
+$resultats = $db->query('SELECT * From article', PDO::FETCH_ASSOC);
 
 
 ?>
