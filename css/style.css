@@ -1,0 +1,528 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+@media screen and (max-width:550px) {
+  body {
+    width: 90%;
+  }
+}
+
+/* entete de ma page*/
+
+header nav ul {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 110px;
+  text-transform: uppercase;
+  margin-right: 40px;
+  background-color: #F8F9F7;
+
+}
+
+a {
+  text-decoration: none;
+  color: #84947b;
+}
+
+
+ul {
+  list-style: none;
+}
+
+header img {
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: #84947b;
+}
+
+h2 {
+  text-align: center;
+  color: #84947b;
+}
+
+form .button {
+  background-color: #84947b;
+  margin-bottom: 20px;
+  width: 80px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  margin: 4px 2px;
+  color: white;
+
+}
+
+/*form {
+  margin-top: 20px;
+  display: inline;
+  justify-content: center;
+
+}*/
+
+p {
+  margin: 10px 20px;
+  display: flex;
+  font-size: small;
+  width: 350px;
+  text-align: justify;
+
+}
+
+/*PAGE acceuil*/
+.section_acceuil {
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+div#gauche {
+  float: left;
+}
+
+div#centre {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.section_acceuil .article_acceuil input[type=submit] {
+  width: 100%;
+  background-color: #84947b;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.section_acceuil .article_acceuil ul {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin: 20px;
+}
+
+.section_acceuil .article_acceuil hr {
+  width: 100%;
+  margin: 10px 10px;
+
+}
+
+h4 {
+  margin: 10px 10px;
+}
+
+.error {
+  color: red;
+}
+
+#hr {
+  width: 08%;
+}
+
+.section_acceuil #para {
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.section_acceuil {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+#main_acceuil {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/*FIN*/
+/*Inscription*/
+.article_inscription form {
+  width: 100%;
+  padding: 30px;
+  border: 1px solid #f1f1f1;
+  background: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.article_inscription {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 50px;
+  margin-bottom: 200px;
+
+}
+
+#inscri {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+/* Bordered form */
+.article_inscription form {
+  width: 100%;
+  padding: 30px;
+  border: 1px solid #f1f1f1;
+  background: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#inscri h1 {
+  width: 38%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+/*Fin*/
+
+/*mes main de  chaque classe*/
+section article img {
+  width: 350px;
+  height: 350px;
+  margin: 10px 20px;
+
+}
+
+.section_contact {
+
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 50px;
+  margin-bottom: 200px;
+
+}
+
+.article_contact {
+  display: flex;
+  margin-top: 20px;
+}
+
+.section_connexion {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+
+.section_propos {
+
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 50px;
+  margin-bottom: 200px;
+
+}
+
+.article_propos {
+  display: flex;
+  margin-top: 20px;
+}
+
+.section_recettes {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+/*FIN*/
+
+/*formulair de contact dans la page contact*/
+input,
+textarea,
+select {
+  padding: 3px;
+  border: 1px solid #0f0f0f;
+  ;
+  width: 200px;
+  box-shadow: 1px 1px 2px #C0C0C0 inset;
+  margin-top: 20px;
+}
+
+label {
+  margin-top: 10px;
+  display: block;
+}
+
+label.inline {
+  display: inline
+}
+
+/*FIN*/
+/*form connexion
+.formcon {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 10px;
+}
+
+.formcon input {
+  margin-top: 5px;
+}
+
+.formcon input[type=submit] {
+  text-align: center;
+  margin-top: 10px;
+}
+*/
+/*FIN*/
+
+
+#container {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+/* Bordered form */
+.article_connexion form {
+  width: 100%;
+  padding: 30px;
+  border: 1px solid #f1f1f1;
+  background: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#container h1 {
+  width: 38%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+/* Full-width inputs */
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+input[type=submit] {
+  background-color: #84947b;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: #53af57;
+  border: 1px solid #53af57;
+}
+
+/*page recettes*/
+
+.article_recettes {
+  display: inline;
+  border: 1px solid transparent;
+
+}
+
+.article_recettes input[type=submit] {
+  width: 100%;
+  background-color: #84947b;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+
+/*FIN*/
+/*page liste des recettes*/
+.section_recette {
+  display: inline;
+  border: 1px solid transparent;
+}
+
+.section_recette input[type=submit] {
+  width: 100%;
+  background-color: #84947b;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.section_recette form {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 10px;
+}
+
+.section_recette form input[type=submit] {
+  width: 50%;
+
+}
+
+input,
+textarea {
+  padding: 3px;
+  border: 1px solid #0f0f0f;
+  width: 100%;
+  box-shadow: 1px 1px 2px #C0C0C0 inset;
+  margin-top: 20px;
+}
+
+.section_recette {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section_recette {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+#main_recette {
+  display: flex;
+  justify-content: center;
+
+}
+
+/* FIN */
+/* page liste recettes */
+#main_listerecettes {
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.section_listerecettes {
+  width: 50%;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+#liste input[type=submit] {
+  background-color: #84947b;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#liste {
+  border: 1px solid #ccc;
+  text-decoration: none;
+  margin-top: 20px;
+
+}
+
+/*FIN*/
+/* page Admin */
+#admin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  width: 50%;
+  margin: auto;
+}
+#main_admin{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+table {
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+.button{
+  background-color: #84947b;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* Fin */
+/* Page Ajout*/
+#main_ajout{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+.ajou{
+  color: white;
+}
+/* FIN */
+
+/*pied de page */
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: #F8F9F7;
+
+}
+
+hr {
+  color: #F8F9F7;
+}
+
+footer nav ul {
+  float: right;
+  margin-right: 150px;
+}
+
+footer nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  text-transform: uppercase;
+}
