@@ -1,7 +1,9 @@
 <?php
 require_once('header.php');
 ?>
-
+<?php
+require_once('code.php');
+?>
 <main id="main_acceuil">
     <section class="section_acceuil">
         <article class="article_acceuil">
@@ -37,15 +39,28 @@ require_once('header.php');
                 <p>Nulla gravida condimention justo nec rhoncus</p>
                 <input type="submit" value="Voir recette">
             </div>
-            <div id="centre">
-                <img src="images/pasta.jpg" alt="image_pasta">
-                <p>
-                <h4>Nulla gravida condimentum justo nec rhoncus</h4>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam modi placeat est aliquam earum recusandae, debitis doloribus ratione architecto, vitae ex quibusdam. Dolorum molestiae
-                praesentium, eos veniam numquam sint ex!
-                </p>
-                <input type="submit" value="Voir plus">
-            </div>
+            <?php
+            while ($row = $resultats->fetch()) :
+            ?>
+                <div id="centre">
+                    <img src="images/<?php echo $row['image']; ?>">
+                    <ul class="info">
+                        <li><i class="fa-solid fa-user"></i> Habaya</li>
+                        <li>Le 22/03/2022</li>
+                        <li>Plat</li>
+                    </ul>
+                    <h4>Nulla gravida condimentum justo nec rhoncus</h4>
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam modi placeat est aliquam earum recusandae, debitis doloribus ratione architecto, vitae ex quibusdam. Dolorum molestiae
+                    praesentium, eos veniam numquam sint ex!
+                    <?php
+                    echo $row['image'];
+                    ?></p>
+                    <input type="submit" value="Voir plus">
+                </div>
+            <?php
+            endwhile;
+            ?>
         </article>
     </section>
 
@@ -54,3 +69,4 @@ require_once('header.php');
 require_once('footer.php');
 ?>
 
+<!-- reste css et boutons -->

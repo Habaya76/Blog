@@ -8,16 +8,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
     if (!empty($email) && !empty($password)) {
         $db = new PDO('mysql:host=localhost;dbname=projet_recettes_cuisine', 'root', 'root');
-        $req = $db->prepare('SELECT email, password FROM users WHERE email = :email AND password = :password');
+        $req = $db->prepare('SELECT email, idusers, password FROM users WHERE email = :email AND password = :password');
         $req->execute(array('email' => $_POST['email'], 'password' => $_POST['password']));
         $resultat = $req->fetch();
+        
         if (!$resultat) {
             $Error = 'mot de passe ou E-mail incorrecte';
         } else {
-            session_start();
+    
             $_SESSION['email'] = $resultat['email'];
             $_SESSION['password'] = $resultat['password'];
-            header('location:index.php');
+            $_SESSION['idusers'] = $resultat['idusers'];
         }
     }
 }

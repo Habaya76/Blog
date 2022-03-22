@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +20,7 @@
                 <li><a href="apropos.php">A Propos</a></li>
                 <li><a href="contact.php">Contact</a></li>
                 <li><a href="connexion.php">Connexion</a></li>
-                <li><a href="connexion.php">Déconnexion</a></li>
+                <li><a href="index.php">Déconnexion</a></li>
             </ul>
         </nav>
         <img src="images/logo.png" alt="logo">

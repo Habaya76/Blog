@@ -3,14 +3,14 @@ require('header.php');
 ?>
 <main id="main_ajout">
 <form  action="">
-    <label for="titre">Titre</label>
-    <input name="titre" type="text" value="">
+    <label for="nom">Titre</label>
+    <input name="nom" type="text" value="">
 
     <label for="contenu">Contenu</label>
     <textarea name="content" type="text" value=""> </textarea>
 
     <label for="content">Image</label>
-    <input name="titre" type="text" value="">
+    <input name="nom" type="text" value="">
 
     <label for="category">Category</label>
     <select name="category" type="text" value="">
