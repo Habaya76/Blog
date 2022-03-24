@@ -1,9 +1,29 @@
 <?php
 require_once('header.php');
-?>
-<?php
+$email = $password = "";
+$Error = "";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
 
-require_once('code.php');
+    if (!empty($email) && !empty($password)) {
+        $db = new PDO('mysql:host=localhost;dbname=projet_recettes_cuisine', 'root', 'root');
+        $req = $db->prepare('SELECT email, idusers, role, password FROM users WHERE email = :email AND password = :password');
+        $req->execute(array('email' => $_POST['email'], 'password' => $_POST['password']));
+        $resultat = $req->fetch();
+
+        if (!$resultat) {
+            $Error = 'mot de passe ou E-mail incorrecte';
+        } else {
+
+            $_SESSION['email'] = $resultat['email'];
+            $_SESSION['password'] = $resultat['password'];
+            $_SESSION['idusers'] = $resultat['idusers'];
+            $_SESSION['role'] = $resultat['role'];
+            header('location:index.php');
+        }
+    }
+}
 ?>
 <main>
     <section class="section_connexion">

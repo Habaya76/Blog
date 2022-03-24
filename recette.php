@@ -35,7 +35,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $resultats->execute(['comments' => $message, 'date' => $date->format('Y-m-d H:m:s'), 'idarticle' => $idarticle, 'idusers' => $idusers]);
     }
 }
-
 function isEmail($var)
 {
     return filter_var($var, FILTER_VALIDATE_EMAIL);
@@ -49,7 +48,6 @@ function verifyInput($var)
     $var = htmlspecialchars($var); //securiter
     return $var;
 }
-
 ?>
 <main id="main_recette">
     <section class="section_recette">

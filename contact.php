@@ -1,8 +1,45 @@
 <?php
 require('header.php');
-?>
-<?php
-require('code.php');
+
+$date = new DateTime();
+$email = $message = "";
+$emailError = $messageError = "";
+$isSuccess = false;
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = verifyInput($_POST["email"]);
+    $message = verifyInput($_POST["message"]);
+    $isSuccess = true;
+
+    if (empty($email)) {
+        $emailError = "saisir email balala";
+        $isSuccess = false;
+    }
+    if (empty($message)) {
+        $messageError = 'veillez saissir un message';
+        $isSuccess = false;
+    }
+    if ($isSuccess) {
+        $db = new PDO('mysql:host=localhost;dbname=projet_recettes_cuisine', 'root', 'root');
+        //controler la connexion
+        $resultats = $db->prepare("INSERT INTO `message` (`email`, `message`, `date`) values (:email, :message, :date)");
+        $resultats->execute(['email' => $email, 'message' => $message, 'date' => $date->format('Y-m-d H:m:s')]);
+    }
+}
+function isEmail($var)
+{
+    return filter_var($var, FILTER_VALIDATE_EMAIL);
+}
+
+// FONCTION POUR VERIFIER NOS INPUT
+function verifyInput($var)
+{
+    $var = trim($var);              //enlever les space suplementaiere
+    $var = stripslashes($var);      //enlever tout les anti_slass
+    $var = htmlspecialchars($var); //securiter
+    return $var;
+}
+
 ?>
 <main>
     <section class="section_contact">

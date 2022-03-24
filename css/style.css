@@ -50,10 +50,16 @@ h1 {
   color: #84947b;
 }
 
-h2 {
+h2 ,h3 {
   text-align: center;
   color: #84947b;
 }
+thead{
+  text-align: center;
+  color:#84947b;
+} 
+
+
 
 form .button {
   background-color: #84947b;
@@ -77,22 +83,25 @@ p {
 }
 
 /*PAGE acceuil*/
-.section_acceuil {
+.main_acceuil{
+  
   margin-top: 50px;
   margin-bottom: 200px;
 }
 
-div#gauche {
+.main_acceuil .gauche {
   float: left;
+  border: 1px solid #ccc;
 }
 
-div#centre {
+.main_acceuil .centre {
   display: flex;
   flex-direction: column;
+  border: 1px solid #ccc;
 
 }
 
-.section_acceuil .article_acceuil input[type=submit] {
+.main_acceuil input[type=submit] {
   width: 100%;
   background-color: #84947b;
   border: none;
@@ -103,14 +112,14 @@ div#centre {
   cursor: pointer;
 }
 
-.section_acceuil .article_acceuil ul {
+.main_acceuil ul {
   display: flex;
   flex-direction: row;
   gap: 15px;
   margin: 20px;
 }
 
-.section_acceuil .article_acceuil hr {
+.main_acceuil hr {
   width: 100%;
   margin: 10px 10px;
 
@@ -128,22 +137,24 @@ h4 {
   width: 08%;
 }
 
-.section_acceuil #para {
+/* .main_acceuil .para {
   display: flex;
   justify-content: center;
 
 
-}
+} */
 
-.section_acceuil {
+.main_acceuil .centre{
   width: 50%;
   display: flex;
-  justify-content: center;
-}
-
-#main_acceuil {
-  display: flex;
-  justify-content: center;
+  flex-direction: column;
+  
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+ 
+  
 }
 
 
@@ -386,32 +397,26 @@ textarea {
 
 /* FIN */
 /* page liste recettes */
-#main_listerecettes {
-  display: flex;
-  justify-content: center;
-
-
-}
-
-.section_listerecettes {
+.main_listerecettes {
   width: 50%;
+  display: flex;
+  flex-direction: column;
   margin-top: 50px;
   margin-bottom: 200px;
-}
-.article_listerecettes .info{
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  margin-left: 20px;
-
-}
-
-.article_listerecettes {
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid #ccc;
   text-decoration: none;
-  margin-top: 20px;
-
+ 
 }
+.main_listerecettes .info{
+ margin-left: 20px;
+ 
+}
+.main_listerecettes .info_article{
+  margin-bottom: 30px;
+}
+
 .button_liste{
   width: 100%;
   background-color: #84947b;
@@ -426,6 +431,23 @@ textarea {
 }
 
 /*FIN*/
+/* Message recus Admin */
+#button{
+  width: 25%;
+  background-color: #84947b;
+  padding: 5px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 30px;
+  
+ 
+}
+#retour{
+  color: white;
+
+}
+/* Fin */
+
 /* page Admin */
 #admin {
   display: flex;
@@ -444,12 +466,14 @@ textarea {
 }
 
 table {
+  
   margin-top: 30px;
   border-collapse: collapse;
 }
 
 td {
-  border: 1px solid black;
+  
+  border: 1px solid  #C0C0C0;;
   padding: 10px;
 }
 

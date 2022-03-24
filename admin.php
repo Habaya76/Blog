@@ -20,7 +20,7 @@ $resu = $resultats->fetchAll();
       <thead>
         <tr>
           <th name="idarticle">id</th>
-          <th name="Nom">Nom</th>
+          <th name="Nom">Titre</th>
           <th name="category">Catégorie</th>
           <th>Action
           </th>
@@ -35,9 +35,9 @@ $resu = $resultats->fetchAll();
             <td name="idArticle"><?php echo $resu[$i]['idarticle'] ?></td>
             <td name="Nom"><?php echo $resu[$i]['nom'] ?></td>
             <td name="category"><?php echo $resu[$i]['categorie'] ?></td>
-            <td id="button">
+            <td >
 
-              <button action="ModiferArticle" class="button"><a class="ajou" href="">Modifier</a></button>
+              <button action="ModiferArticle" class="button"><a class="ajou" href="modifie_article.php">Modifier</a></button>
               <button action="SupprimerArticle" class="button"><a class="ajou" href="²">Suprimer</a></button>
 
             </td>
